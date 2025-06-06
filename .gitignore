@@ -404,3 +404,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+/Frends.Slack.SendMessage/Frends.Slack.SendMessage.Tests/.env.local
