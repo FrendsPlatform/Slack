@@ -1,0 +1,16 @@
+name: DeleteMessage_release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: FrendsPlatform/FrendsTasks/.github/workflows/release.yml@main
+    with:
+      workdir: Frends.Slack.DeleteMessage
+      env_var_name_1: FRENDS_SLACK_TEST_TOKEN
+      env_var_name_2: FRENDS_SLACK_TEST_CHANNEL_ID
+    secrets:
+      feed_api_key: ${{ secrets.TASKS_FEED_API_KEY }}
+      env_var_value_1: ${{ secrets.FRENDS_SLACK_TEST_TOKEN }}
+      env_var_value_2: ${{ secrets.FRENDS_SLACK_TEST_CHANNEL_ID }}
